@@ -103,6 +103,21 @@ header:hover, footer:hover {
     opacity: 0.8;
 }
 
+.art::selection {
+  background: #f80060; /* The highlight color */
+  color: #000;         /* The text color when highlighted */
+}
+
+.dev::selection {
+  background: #B4D72E; /* The highlight color */
+  color: #000;         /* The text color when highlighted */
+}
+
+.blog::selection {
+  background: #FFDA74; /* The highlight color */
+  color: #000;         /* The text color when highlighted */
+}
+
 
 /* 
 @media (prefers-color-scheme: dark) {
