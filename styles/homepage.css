@@ -1,18 +1,22 @@
+* {
+    box-sizing: border-box; /* Padding won't increase the size of elements */
+}
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 
 }
 
 .main {
     display: flex;
-    gap: 8px;
+    gap: 16px;
     flex-direction: column;
     justify-content: space-evenly;
     flex: 1;
-    margin: 10px;
+    padding: 16px;
 }
 
 .main > div {
@@ -24,12 +28,13 @@ body {
 .art {
     background: #FF89B6;
     background: linear-gradient(90deg, rgba(255, 137, 182, 0) 0%, rgba(255, 137, 182, 1) 70%);
+    border-radius: 0 1em 1em 0em;
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
-    font-size: clamp(5rem, 20vw, 16rem);
+    font-size: clamp(5rem, 11vw, 12rem);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
@@ -41,6 +46,7 @@ a {
     justify-content: flex-end;
     background: #B4D72E;
     background: linear-gradient(90deg, rgba(180, 215, 46, 1) 30%, rgba(180, 215, 46, 0) 100%);
+    border-radius: 1em 0 0 1em;
 }
 
 .dev a {
@@ -50,6 +56,7 @@ a {
 .blog {
     background: #FFDA74;
     background: linear-gradient(90deg, rgba(255, 218, 116, 0) 0%, rgba(255, 218, 116, 1) 70%);
+    border-radius: 0 1em 1em 0;
 }
 
 .blog a {
@@ -62,6 +69,7 @@ header, footer {
     display: flex;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 header {
@@ -94,3 +102,36 @@ a:active {
 header:hover, footer:hover {
     opacity: 0.8;
 }
+
+
+/* 
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: rgb(35, 32, 46);
+    }
+
+    p {
+        color: white;
+    }
+
+    footer {
+        background-color: rgb(28, 28, 37);
+    }
+
+    header {
+    background: #23222a;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.623) 0%, rgba(232, 232, 232, 0) 100%);
+    }
+
+    .art a{
+        color: rgb(251, 173, 186);
+    }
+
+    .dev a {
+        color: rgb(202, 241, 142)
+    }
+
+    .blog a {
+        color: rgb(240, 233, 161);
+    }
+} */
