@@ -35,7 +35,8 @@ a {
     text-decoration: none;
     font-weight: bold;
     font-size: clamp(5rem, 11vw, 12rem);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    flex: 1;
 }
 
 .art a {
@@ -51,6 +52,7 @@ a {
 
 .dev a {
     color: #607A00;
+    text-align: right;
 }
 
 .blog {
@@ -91,7 +93,7 @@ p {
 }
 
 a:hover {
-    transform: scale(1.01) rotate(-1deg); /* "Pop" effect with a slight tilt */
+    transform: scale(1.01) rotate(-0.5deg); /* "Pop" effect with a slight tilt */
     filter: brightness(0.95);
 }
 
